@@ -530,11 +530,15 @@ h3 {
 /* FEATURES */
 /* ----------------------------------------------- */
 .section-features {
-  background-color: #181717;
+  background-color: #040404;
 }
 
 .section-features .long-copy {
   margin-bottom: 30px;
+}
+
+.section--project-holders {
+  background-color: #040404;
 }
 
 /* ----------------------------------------------- */
@@ -959,7 +963,7 @@ box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.2
 }
 
 .section-cities {
-  background-color: #1e1e20;
+  background-color: #001111;
 }
 
 .gallery {
@@ -1009,5 +1013,5 @@ box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.2
   grid-row: 1/-1;
 }
 .galleryPhotos {
-  background-color: #181717;
+  background-color: #001111;
 }
