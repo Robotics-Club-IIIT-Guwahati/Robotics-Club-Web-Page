@@ -91,3 +91,32 @@ $(document).ready(function () {
     }
   });
 });
+
+var photos = document.querySelectorAll('.photo');
+console.log(Array.from(photos), 'photots');
+Array.from(photos).forEach((photo) => {
+  // Create button for viewing current photo
+  var button = document.createElement('button');
+  button.className = 'view-btn';
+  var buttonText = document.createTextNode('View');
+  button.addEventListener('click', (event) => {
+    var target = event.target.parentNode
+      .querySelector('img')
+      .getAttribute('src');
+    var photoModal = document.querySelector('.photo-modal');
+    var currentPhoto = document.createElement('img');
+    currentPhoto.setAttribute('src', target);
+    photoModal.appendChild(currentPhoto);
+    // Add a new
+  });
+  // Append text node to button
+  button.appendChild(buttonText);
+  photo.addEventListener('mouseover', function viewPhoto() {
+    photo.classList.add('overlay');
+    photo.appendChild(button);
+  });
+  photo.addEventListener('mouseout', function viewPhoto() {
+    photo.classList.remove('overlay');
+    photo.removeChild(button);
+  });
+});

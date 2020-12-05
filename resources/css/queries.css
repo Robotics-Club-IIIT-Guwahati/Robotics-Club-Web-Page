@@ -189,6 +189,18 @@
     justify-content: center;
     margin-top: 20px;
   }
+
+  header {
+    height: 450px;
+  }
+
+  #contact-info .links {
+    min-width: 300px;
+  }
+
+  h1 {
+    word-spacing: 2px;
+  }
 }
 
 /* Small phones: from 0 to 480px */
