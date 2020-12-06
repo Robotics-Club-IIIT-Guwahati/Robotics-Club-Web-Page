@@ -1,3 +1,10 @@
+/* Desktops */
+
+@media only screen and (max-width: 1460px) {
+  .container {
+    flex-wrap: wrap;
+  }
+}
 /* Big tablet to 1200px (widths smaller taht the 1140px row) */
 @media only screen and (max-width: 1200px) {
   .hero-text-box {
@@ -24,47 +31,14 @@
     margin-left: 10%;
   }
 
-  .steps-box {
-    margin-top: 10px;
-  }
-  .steps-box:last-child {
-    margin-top: 10px;
-  }
-  .works-steps {
-    margin-bottom: 40px;
-  }
-  .works-step:last-of-type {
-    margin-bottom: 60px;
-  }
-
-  .app-screen {
-    width: 50%;
-  }
-
   .icon-small {
     width: 17px;
     margin-right: 5px;
   }
-
-  .city-feature {
-    font-size: 90%;
-  }
-
-  .plan-box {
-    width: 100%;
-    margin-left: 0%;
-  }
-
-  .plan-price {
-    font-size: 250%;
-  }
-  .contact-form {
-    width: 80%;
-  }
 }
 
 /* Small phones to small tablets: from 481px to 767px */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 850px) {
   body {
     font-size: 16px;
   }
@@ -140,31 +114,6 @@
     margin-left: 0%;
   }
 
-  .app-screen {
-    width: 40%;
-  }
-  .steps-box:first-child {
-    text-align: center;
-  }
-
-  .works-step div {
-    height: 40px;
-    width: 40px;
-    margin-right: 15px;
-    padding: 4px;
-    font-size: 120%;
-  }
-
-  .works-step {
-    margin-bottom: 20px;
-  }
-  .works-step:last-of-type {
-    margin-bottom: 20px;
-  }
-  .people {
-    flex-direction: column;
-  }
-
   .logo {
     height: 30px;
     width: 30px;
@@ -181,7 +130,9 @@
 
   .footer-nav {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    margin-right: 20px;
+    justify-content: center;
   }
 
   .social-links {
@@ -207,8 +158,5 @@
 @media only screen and (max-width: 480px) {
   section {
     padding: 25px 0;
-  }
-  .contact-form {
-    width: 100%;
   }
 }

@@ -66,28 +66,22 @@ $(document).ready(function () {
     }
   );
 
-  $('.js--wp-4').waypoint(
-    function (direction) {
-      $('.js--wp-4').addClass('animated pulse');
-    },
-    {
-      offset: '80%',
-    }
-  );
-
   /* Mobile navigation */
   $('.js--nav-icon').click(function () {
     var nav = $('.js--main-nav');
     var icon = $('.js--nav-icon i');
+    //nav.addClass('sticky');
 
     nav.slideToggle(200);
-
+    //nav.animate({ width: 'toggle' });
     if (icon.hasClass('ion-navicon-round')) {
       icon.addClass('ion-close-round');
       icon.removeClass('ion-navicon-round');
+      $('header').css('height', '700px');
     } else {
       icon.addClass('ion-navicon-round');
       icon.removeClass('ion-close-round');
+      $('header').css('height', '480px');
     }
   });
 });
